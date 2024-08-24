@@ -10,7 +10,7 @@ SECRET_KEY = 'django-insecure-3@*bfmav42s7lo-^fkw81_o-@2y)v%8-&u+g3f_%q&ny^_lk#v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1', 'amazon','flipkart','myntra','basith','venugo','ajin','epay']
+ALLOWED_HOSTS = ['localhost','127.0.0.1']
 
 
 # Tenant settings
@@ -85,9 +85,9 @@ WSGI_APPLICATION = 'Tenants.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django_tenants.postgresql_backend',
-        'NAME': 'multitenantdb',
+        'NAME': 'yourdb',
         'USER': 'postgres',
-        'PASSWORD': 'sixd',
+        'PASSWORD': 'pass',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -149,8 +149,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = '4041eric@gmail.com'
-EMAIL_HOST_PASSWORD = 'cnzvpknchalbtekv'
+EMAIL_HOST_USER = 'example@gmail.com'
+EMAIL_HOST_PASSWORD = 'pass'
 
 
 LOGGING = {
